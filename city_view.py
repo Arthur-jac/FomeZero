@@ -37,7 +37,7 @@ def show_city_view(dfcopy):
             )
     with tab2:
         df_aux = dfcopy.loc[:, 'City'].unique()
-        df_aux = pd.DataFrame(dfcopy['Cuisines'].unique(), columns=['City'])
+        df_aux = pd.DataFrame(dfcopy['City'].unique(), columns=['City'])
         st.dataframe(df_aux, use_container_width=True, hide_index=True)
         
     
